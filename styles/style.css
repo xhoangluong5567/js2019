@@ -1,0 +1,271 @@
+html {
+    background-image: url("../medias/back.png");
+    background-size: cover;
+}
+
+.grid {
+    width: 600px;
+    height: 530px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid #cbcbcb;
+
+    /* background-image: linear-gradient(to bottom, #59C2FF , #1270E3); */
+    /* box-shadow: 10px 15px 5px #cbcbcb; */
+}
+
+.grid h1 {
+    background-color: #F35F7F;
+    font-size: 60px;
+    text-align: center;
+    color: #ffffff;
+    padding: 12px 0 7px 0;
+    border-radius: 50px;
+}
+#score {
+    color: #F35F7F;
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid #question {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #F35F7F;
+	font-family: 'Fira Sans', sans-serif;
+	margin-left: 6px;
+}
+
+.buttons {
+    /* margin-top: 30px; */
+    text-align: center;
+}
+
+#btn0, #btn1, #btn2, #btn3 {
+    background-color: transparent;
+	font-size: 20px;
+	border-radius: 50px;
+	text-align: center;
+    width: 260px;
+    height: 40px;
+    margin: 16px 5px 5px 5px
+}
+.buttons span {
+    text-align: center;
+    padding-top: 8px; 
+    margin-top: -20px;
+    margin-left: -6px; 
+}
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+}
+#choice0, #choice1, #choice2, #choice3, #choice4 {
+	color: #F35F7F;
+}
+#progress {
+    text-align: right;
+    font-size: 25px;
+    color: #F35F7F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.exit {
+    color: #ff0000;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ------------------------------------------------------- */
+.three-button {
+    text-align: center;
+}
+.phidai {
+    background-color: #F35F7F;
+    width: 187px;
+    height: 278px;
+    display: inline-block;
+    text-align: center;
+	border-radius: 10px; 
+	text-decoration: none;
+}
+.phidai p {
+    text-align: center;
+	font-size: 36px;
+	color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif
+}
+.phidai img {
+	height: 70px;
+	width: 70px;
+}
+/* ----------------------------------------------------- */
+.phidai-button1 {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;
+}
+.phidai-button1::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+    border-radius: 20px; 
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.phidai-button1:hover::before{
+	opacity: 0;
+	-webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+    /* border-radius: 20px;  */
+    
+}
+.phidai-button1::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+    /* background-color: rgba(255,255,255,0.25); */
+    background-image: url("../medias/thethao.png");
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: scale(0.5,0.5);
+    transform: scale(0.5,0.5);
+    border-radius: 10px; 
+}
+.phidai-button1:hover::after{
+	opacity: 1 ;
+	-webkit-transform: scale(1,1);
+    transform: scale(1,1);
+}
+/* ------------------------------------------------ */
+.phidai-button2 {
+    color: rgba(255,255,255,1);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;
+}
+.phidai-button2::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+    border-radius: 20px; 
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.phidai-button2:hover::before{
+	opacity: 0;
+	-webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+    /* border-radius: 20px;  */
+    
+}
+.phidai-button2::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+    /* background-color: rgba(255,255,255,0.25); */
+    background-image: url("../medias/dongvat.png");
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: scale(0.5,0.5);
+    transform: scale(0.5,0.5);
+    border-radius: 10px; 
+}
+.phidai-button2:hover::after{
+	opacity: 1 ;
+	-webkit-transform: scale(1,1);
+    transform: scale(1,1);
+}
+/* ----------------------------------------------- */
+.phidai-button3 {
+    color: rgba(255,255,255,1);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;
+}
+.phidai-button3::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+    border-radius: 20px; 
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.phidai-button3:hover::before{
+	opacity: 0;
+	-webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+    /* border-radius: 20px;  */
+    
+}
+.phidai-button3::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+    /* background-color: rgba(255,255,255,0.25); */
+    background-image: url("../medias/xahoi.png");
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: scale(0.5,0.5);
+    transform: scale(0.5,0.5);
+    border-radius: 10px; 
+}
+.phidai-button3:hover::after{
+	opacity: 1 ;
+	-webkit-transform: scale(1,1);
+    transform: scale(1,1);
+}
+/* -------------------------------------- */
+.back-button {
+	text-align: center;
+}
+.back-button img {
+	height: 60px;
+	width: 60px;
+}
